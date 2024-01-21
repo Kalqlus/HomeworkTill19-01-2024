@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:zadanie_19_01_2024_BETTER.Components"
+             x:Class="zadanie_19_01_2024_BETTER.MainPage"
+             BackgroundColor="MistyRose"
+             >
+
+    <Grid x:Name="OfferList" Style="{DynamicResource OfferCardLayout}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <custom:OfferLayout Grid.Column="0" Grid.Row="0" Style="{DynamicResource OfferCard}">
+            <Image Grid.Row="0" Source="ryzen"/>
+            <Label Grid.Row="1" Style="{DynamicResource OfferTitle}" Text="Ryzen 3 1200"/>
+            <Label Grid.Row="2" Style="{DynamicResource Rating}" Text="2.1"/>
+            <HorizontalStackLayout Grid.Row="3" x:Name="first" Style="{DynamicResource Stars}" Loaded="first_Loaded"/>
+            <Label Grid.Row="4" Style="{DynamicResource Description}" Text="Przezył swoje lata i obliczenia, ale pora go wynienić"/>
+            <Button Grid.Row="5" Style="{DynamicResource MoreButton}" Text="Wiecej..." />
+        </custom:OfferLayout>
+        
+        <custom:OfferLayout Grid.Column="1" Grid.Row="0" Style="{DynamicResource OfferCard}">
+            <Image Grid.Row="0" Source="pochita"/>
+            <Label Grid.Row="1" Style="{DynamicResource OfferTitle}" Text="POchita plush"/>
+            <Label Grid.Row="2" Style="{DynamicResource Rating}" Text="4.9"/>
+            <HorizontalStackLayout Grid.Row="3" x:Name="second" Style="{DynamicResource Stars}" Loaded="second_Loaded"/>
+            <Label Grid.Row="4" Style="{DynamicResource Description}" Text="goes vrrr...VRRR"/>
+            <Button Grid.Row="5" Style="{DynamicResource MoreButton}" Text="Wiecej..." />
+        </custom:OfferLayout>
+        
+        <custom:OfferLayout Grid.Column="0" Grid.Row="1" Style="{DynamicResource OfferCard}">
+            <Image Grid.Row="0" Source="vector"/>
+            <Label Grid.Row="1" Style="{DynamicResource OfferTitle}" Text="KRISS VECTOR"/>
+            <Label Grid.Row="2" Style="{DynamicResource Rating}" Text="4.2"/>
+            <HorizontalStackLayout Grid.Row="3" x:Name="third" Style="{DynamicResource Stars}" Loaded="third_Loaded"/>
+            <Label Grid.Row="4" Style="{DynamicResource Description}" Text="bardzoo szybki, robi BRRRRRRRRRRRT albo BR BR BR, zaleczy czy semi czy auto"/>
+            <Button Grid.Row="5" Style="{DynamicResource MoreButton}" Text="Wiecej..." />
+        </custom:OfferLayout>
+        
+        <custom:OfferLayout Grid.Column="1" Grid.Row="1" Style="{DynamicResource OfferCard}">
+            <Image Grid.Row="0" Source="programmer_mug"/>
+            <Label Grid.Row="1" Style="{DynamicResource OfferTitle}" Text="Kubeczek"/>
+            <Label Grid.Row="2" Style="{DynamicResource Rating}" Text="3.3"/>
+            <HorizontalStackLayout Grid.Row="3" x:Name="fourth" Style="{DynamicResource Stars}" Loaded="fourth_Loaded"/>
+            <Label Grid.Row="4" Style="{DynamicResource Description}" Text="MMM kawusia (kawa nie w zestawie z kubkiem)"/>
+            <Button Grid.Row="5" Style="{DynamicResource MoreButton}" Text="Wiecej..." />
+        </custom:OfferLayout>
+        
+    </Grid>
+    
+    
+
+</ContentPage>

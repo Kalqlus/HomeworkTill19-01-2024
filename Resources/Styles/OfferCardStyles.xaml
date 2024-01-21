@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="RichBlack">#0D1F2D</Color>
+    <Color x:Key="PaynesGray">#546A7B</Color>
+    <Color x:Key="CadetGray">#9EA3B0</Color>
+    <Color x:Key="MistyRose">#FAE1DF</Color>
+    <Color x:Key="DesertSand">#E4C3AD</Color>
+
+    <Style x:Key="OfferCardLayout" TargetType="Grid">
+        <Setter Property="RowSpacing" Value="10"/>
+        <Setter Property="ColumnSpacing" Value="10"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="BackgroundColor" Value="MistyRose"/>
+    </Style>
+
+    <Style x:Key="OfferCard" TargetType="Grid">
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource DesertSand}"/>
+    </Style>
+
+    <Style x:Key="OfferTitle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource RichBlack}"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+    </Style>
+
+    <Style x:Key="Rating" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource RichBlack}"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="Stars" TargetType="HorizontalStackLayout">
+        <Setter Property="Spacing" Value="10"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+    </Style>
+
+    <Style x:Key="Description" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource RichBlack}"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="MoreButton" TargetType="Button">
+        <Setter Property="TextColor" Value="{DynamicResource RichBlack}"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource CadetGray}"/>
+    </Style>
+
+</ResourceDictionary>
